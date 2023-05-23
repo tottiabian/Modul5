@@ -12,7 +12,7 @@ public class BinaryTree {
             root = newData;
             return root;
         }
-        if (newData.data > root.data) {
+        if (newData.data < root.data) {
             root.left = NewNode(root.left, newData);
         } else {
             root.right = NewNode(root.right, newData);
